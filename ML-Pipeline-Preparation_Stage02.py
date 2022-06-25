@@ -7,10 +7,10 @@
 #This is a Natural language Processing project "in progress"
 #This project is the Stage_02 of the ETL-ML pipeline for processing disaster data (text message) 
 # for imediate and adequate response
-#In Stage _01, I built an ETL pipeline for processing the data, cleaning the data, and saving it in sqlite database.  
+#In Stage_01, I built an ETL pipeline for processing the data, cleaning the data, and saving it in sqlite database.  
 #Now the clean data will be used in an ML pipeline for predicting the category of data for each text message.
-#There are  36 different possible categories a text mesaage can be classified so it is a multioutput classification
-#Staeg_03 will be testing and deployment. After deployment, any message entered by various individuals during a disaster
+#There are 36 different categories a text mesaage can be classified so it is a multioutput classification
+#Staeg_03 will be hyperparameter tunning, model testing, and deployment. After deployment, any message entered by various individuals during a disaster
 #will be classified for immediate and adequate response. 
 
 # import some libraries
@@ -55,7 +55,7 @@ ylabels
 # In[23]:
 
 
-#Write a tokenization function to process your text data
+#Tokenization function to process thetext data
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -66,7 +66,7 @@ url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-
 # In[24]:
 
 
-#Write a Tokenization function to process the text data
+#Tokenization function to process the text data
 def tokenize(text):
     # get list of all urls using regex
     detected_urls = re.findall(url_regex, text)
