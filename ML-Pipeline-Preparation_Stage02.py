@@ -10,7 +10,7 @@
 #In Stage_01, I built an ETL pipeline for processing the data, cleaning the data, and saving it in sqlite database.  
 #Now the clean data will be used in an ML pipeline for predicting the category of data for each text message.
 #There are 36 different categories a text mesaage can be classified so it is a multioutput classification
-#Staeg_03 will be hyperparameter tunning, model testing, and deployment. After deployment, any message entered by various individuals during a disaster
+#Staeg_03 will be hyperparameter tunning, and model testing. After deployment, any message entered by various individuals during a disaster
 #will be classified for immediate and adequate response. 
 
 # import some libraries
