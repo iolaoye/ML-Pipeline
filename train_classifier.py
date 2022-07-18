@@ -201,9 +201,8 @@ grid_pipeline.fit(x_train, y_train)
 
 
 print(" Results from Grid Search " )
-print("\n The best estimator across ALL searched params:\n",grid_pipeline.best_estimator_)
-#print("\n The best score across ALL searched params:\n",grid_pipeline.best_score_)
-#print("\n The best parameters across ALL searched params:\n",grid_pipeline.best_params_)
+print("\n The best score across ALL searched params:\n",grid_pipeline.best_score_)
+print("\n The best parameters across ALL searched params:\n",grid_pipeline.best_params_)
 
 
 # In[37]:
