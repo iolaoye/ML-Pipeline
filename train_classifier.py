@@ -172,8 +172,6 @@ scores = cross_validate(classifier, x_train, y_train, cv=2, scoring=['f1_weighte
 
 # In[34]:
 
-
-#Improve your model¶
 #Use grid search to find better parameters.
 parameters = {'learning_rate': [0.01,0.02,0.03],
                'subsample'    : [0.9, 0.5, 0.2],
